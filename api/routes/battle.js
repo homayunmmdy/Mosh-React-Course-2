@@ -5,7 +5,14 @@ const Battle = require("../model/battleModel");
 // app battles
 router.get("/", async (req, res) => {
   try {
-    const battles = await Battle.find();
+    let query = {}
+    if(req.query.title) {
+      query['name'] = {$regex : req.query.title , $options: "i"}
+    }
+    if(req.query.desc) {
+      query['desc'] = {$regex : req.query.desc , $options: "i"}
+    }
+    const battles = await Battle.find(query);
     res.json(battles);
   } catch (err) {
     res.status(500).json({ message: err.message });
