@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import SearchForm from "../components/SearchForm";
+import SearchForm from "./SearchForm";
+import Card from "./Card";
 
 interface BattleType {
   _id: string;
@@ -11,7 +11,7 @@ interface BattleType {
   videoUrl?: string;
 }
 
-const Home = () => {
+const Cards = () => {
   const [battles, setBattles] = useState<BattleType[]>([]);
 
   useEffect(() => {
@@ -34,21 +34,26 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <h1>Battles</h1>
+    <div className=" w-full min-h-screen bg-cover bg-center bg-stone-400" style={{ backgroundImage: "url(/cardbg.jpg)" }}>
       <SearchForm onSearch={handleSearch} />
-      <ul>
+      <div
+        className=" flex flex-wrap justify-center items-center gap-3 py-5  	"
+        
+      >
         {battles.map((battle) => (
-          <li key={battle._id} className="py-2">
-            <Link to={`/battle/${battle._id}`}>
-              <h2>{battle.name}</h2>
-              <p>{battle.desc}</p>
-            </Link>
-          </li>
+          <>
+            <Card
+              id={battle._id}
+              title={battle.name}
+              desc={battle.desc}
+              imageUrl={battle.imgUrl}
+              videoUrl={battle.videoUrl}
+            />
+          </>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
 
-export default Home;
+export default Cards;
