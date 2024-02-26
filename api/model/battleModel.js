@@ -4,6 +4,16 @@ const battleSchema = new mongoose.Schema({
     name: {
         type : String,
         required : true
+    },
+    desc: {
+        type : String,
+        required : true
+    },
+    imgUrl: {
+        type : String,
+    },
+    videoUrl: {
+        type : String,
     }
 });
 

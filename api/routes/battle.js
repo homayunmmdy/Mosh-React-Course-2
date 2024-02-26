@@ -16,6 +16,9 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
   const battle = new Battle({
     name: req.body.name,
+    desc : req.body.desc,
+    imgUrl: req.body.imgUrl,
+    videoUrl : req.body.videoUrl,
   });
   try {
     const newBattle = await battle.save();
