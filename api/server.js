@@ -12,6 +12,10 @@ const port = process.env.PORT;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", async (req, res) => {
+  res.status(200).json({ message: 'Your welcome' });
+});
+
 app.use("/api/battles", battleRoute);
 
 app.listen(port, () => {
