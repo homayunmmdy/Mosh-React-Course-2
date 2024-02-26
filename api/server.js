@@ -12,8 +12,6 @@ const port = process.env.PORT;
 app.use(cors());
 app.use(express.json());
 
-
-
 app.use("/api/battles", battleRoute);
 
 app.listen(port, () => {

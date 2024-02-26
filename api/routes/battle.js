@@ -1,12 +1,12 @@
 const router = require("express").Router();
 
-const Todo = require("../model/todoModel");
+const Battle = require("../model/battleModel");
 
 // app battles
 router.get("/", async (req, res) => {
   try {
-    const todos = await Todo.find();
-    res.json(todos);
+    const battles = await Battle.find();
+    res.json(battles);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
@@ -14,12 +14,12 @@ router.get("/", async (req, res) => {
 
 //Add battle
 router.post("/", async (req, res) => {
-  const todo = new Todo({
-    task: req.body.task,
+  const battle = new Battle({
+    name: req.body.name,
   });
   try {
-    const newTodo = await todo.save();
-    res.status(201).json(newTodo);
+    const newBattle = await battle.save();
+    res.status(201).json(newBattle);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
@@ -29,10 +29,10 @@ router.post("/", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   try {
-    const todo = await Todo.findByIdAndUpdate(req.params.id, req.body, {
+    const battle = await Battle.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     });
-    res.json(todo);
+    res.json(battle);
   } catch (err) {
     res.status(404).json({ message: err.message });
   }
@@ -41,8 +41,8 @@ router.put("/:id", async (req, res) => {
 //Delete battle
 router.delete("/:id", async (req, res) => {
   try {
-    const todo = await Todo.findByIdAndDelete(req.params.id);
-    res.json({ message: "Todo deleted successfully" });
+    const battle = await Battle.findByIdAndDelete(req.params.id);
+    res.json({ message: "Battle deleted successfully" });
   } catch (err) {
     res.status(404).json({ message: err.message });
   }
