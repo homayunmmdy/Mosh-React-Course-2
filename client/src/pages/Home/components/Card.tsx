@@ -14,7 +14,7 @@ const Card = ({ id, title, imageUrl, videoUrl, desc }: Props) => {
       <div
         style={{ backdropFilter: "blur(5px)" }}
         key={id}
-        className=" w-10/12 md:w-1/4 bg-white bg-opacity-10 rounded p-3 text-white border border-gray-300 shadow-lg"
+        className=" w-10/12 md:w-1/4 h-full bg-white bg-opacity-10 rounded p-3 text-white border border-gray-300 shadow-lg"
       >
         <Link to={`/battle/${id}`}>
           <div className="w-full mb-3 pb-3 border-b border-1 border-white">
