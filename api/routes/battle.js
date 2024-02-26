@@ -11,7 +11,18 @@ router.get("/", async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
-
+// single battle 
+router.get("/:id", async (req, res) => {
+  try {
+    const battle = await Battle.findById(req.params.id);
+    if (!battle) {
+      return res.status(404).json({ message: 'Battle not found' });
+    }
+    res.json(battle);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
 //Add battle
 router.post("/", async (req, res) => {
   const battle = new Battle({
