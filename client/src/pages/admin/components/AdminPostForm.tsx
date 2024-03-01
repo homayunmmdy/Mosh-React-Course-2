@@ -11,6 +11,13 @@ const AdminPostForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      if (!imgUrl && !videoUrl) {
+        throw new Error("Please provide either an image URL or video URL");
+      }
+      if (imgUrl && videoUrl) {
+        throw new Error("Please provide either an image URL or video URL");
+      }
+      
       const response = await axios.post("/api/battles", {
         name,
         desc,

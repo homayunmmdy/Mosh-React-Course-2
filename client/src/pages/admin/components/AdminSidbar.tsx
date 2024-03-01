@@ -2,7 +2,7 @@ import AdminNavLink from "./AdminNavLink";
 
 const AdminSidbar = () => {
   return (
-    <div>
+    <>
       <div
         className="sm:none duration-175 linear fixed !z-50 flex min-h-full flex-col bg-white pb-10 shadow-2xl shadow-white/5 transition-all dark:!bg-navy-800 dark:text-white md:!z-50 lg:!z-50 xl:!z-0 translate-x-0"
       >
@@ -10,7 +10,7 @@ const AdminSidbar = () => {
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 20 20"
             aria-hidden="true"
             height="1em"
@@ -18,9 +18,9 @@ const AdminSidbar = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
         </span>
@@ -38,7 +38,7 @@ const AdminSidbar = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 24 24"
                     className="h-6 w-6"
                     height="1em"
@@ -63,7 +63,7 @@ const AdminSidbar = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 24 24"
                     
                     height="1em"
@@ -87,7 +87,7 @@ const AdminSidbar = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 24 24"
                     className="h-6 w-6"
                     height="1em"
@@ -111,7 +111,7 @@ const AdminSidbar = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 24 24"
                     className="h-6 w-6"
                     height="1em"
@@ -135,7 +135,7 @@ const AdminSidbar = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 24 24"
                     className="h-6 w-6"
                     height="1em"
@@ -159,7 +159,7 @@ const AdminSidbar = () => {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 24 24"
                     className="h-6 w-6"
                     height="1em"
@@ -197,8 +197,8 @@ const AdminSidbar = () => {
                   fill="white"
                 ></path>
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M20.5 31.989C26.8452 31.989 31.989 26.8452 31.989 20.5C31.989 14.1548 26.8452 9.01099 20.5 9.01099C14.1548 9.01099 9.01099 14.1548 9.01099 20.5C9.01099 26.8452 14.1548 31.989 20.5 31.989ZM20.5 41C31.8218 41 41 31.8218 41 20.5C41 9.17816 31.8218 0 20.5 0C9.17816 0 0 9.17816 0 20.5C0 31.8218 9.17816 41 20.5 41Z"
                   fill="white"
                 ></path>
@@ -221,7 +221,7 @@ const AdminSidbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
