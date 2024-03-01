@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Battle from "./pages/Battle/Battle";
-import AdminPost from "./pages/admin/post/AminPost";
+import Admin from "./pages/admin/Admin";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Route path="/battle/:id" element={<Battle />} />
           </Routes>
           <Routes>
-          <Route path="/admin/post" element={<AdminPost />} />
+          <Route path="/admin/*" element={<Admin />} />
           </Routes>
       </Router>
     </>
