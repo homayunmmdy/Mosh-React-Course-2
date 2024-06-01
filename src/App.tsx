@@ -9,19 +9,19 @@ import NavBar from "./state-management/NavBar";
 import HomePage from "./state-management/HomePage";
 import AuthReducer from "./state-management/reducers/authReducer";
 import AuthContext from "./state-management/contexts/authContext";
+import AuthProvider from "./state-management/AuthProvider";
 
 function App() {
   const [tasks, tasksDispatch] = useReducer(tasksReducers, []);
-  const [user, authDispatch] = useReducer(AuthReducer, "");
 
   return (
     <>
-      <AuthContext.Provider value={{ user, dispatch: authDispatch }}>
+      <AuthProvider>
         <TasksContext.Provider value={{ tasks, dispatch: tasksDispatch }}>
           <NavBar />
           <HomePage />
         </TasksContext.Provider>
-      </AuthContext.Provider>
+      </AuthProvider>
     </>
   );
 }
