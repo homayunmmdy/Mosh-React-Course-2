@@ -1,5 +1,4 @@
 import React, { Dispatch } from "react";
-import { Task, TaskAction } from "../reducers/tasksReducers";
 import { AuthAction } from "../reducers/authReducer";
 
 //Type of the object we want to share
