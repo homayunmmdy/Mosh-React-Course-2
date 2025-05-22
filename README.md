@@ -1,22 +1,29 @@
-# Playground Start
+## React 18: Intermediate Topics – Learning Notes
 
-This is the starter code for the playground project we use in part 2 of my React course. 
+![Screenshot 2025-05-22 182757](https://github.com/user-attachments/assets/72246042-94e5-443b-ad08-4f83ca4350f6)
 
-## Getting Started
 
-To get started, follow these steps:
+This repository contains my personal notes and project work from the [**React 18: Intermediate Topics**](https://codewithmosh.com/p/ultimate-react-part2) course by Mosh Hamedani.
 
-1. Clone this repository to your local machine.
-2. Run `npm install` to install the required dependencies.
-3. Run `npm run dev` to start the web server. 
+### 📅 Course Timeline
 
-## About the Course
+* **Started:** March 23, 2024
+* **Completed:** June 2, 2024
 
-This repository belongs to part 2 of my React course covering intermediate-level topics. 
+### 🎯 About the Course
 
-- Fetching and updating data with React Query
-- All about reducers, context, and providers
-- Managing application state with Zustand
-- Routing with React Router 
+This intermediate-level course is focused on advancing core React skills by building scalable, high-performance applications using modern best practices. It continues the video game discovery app built in the beginner course and introduces new layers of complexity through tools like **React Query**, **Zustand**, and **React Router**.
 
-You can find the course at https://codewithmosh.com
+Topics covered include:
+
+* Advanced state management using **reducers**, **context**, and **Zustand**
+* Data fetching and caching with **React Query**
+* Infinite scrolling implementation
+* Routing with **React Router**
+* Performance optimization techniques
+* Project structure and maintainability
+* Clean and professional code practices
+
+### 💡 Why I Took This Course
+
+I took this course to **go beyond the fundamentals and gain confidence working with more complex React features** used in real-world applications. It provided me with practical skills in state management and routing, which are essential for developing scalable front-end applications. The techniques learned here now inform how I architect production-ready React apps.
