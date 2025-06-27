@@ -1,4 +1,4 @@
-## React 18: Intermediate Topics – Learning Notes
+## React 18: Intermediate Topics
 
 ![Screenshot 2025-05-22 182757](https://github.com/user-attachments/assets/72246042-94e5-443b-ad08-4f83ca4350f6)
 
@@ -27,3 +27,8 @@ Topics covered include:
 ### 💡 Why I Took This Course
 
 I took this course to **go beyond the fundamentals and gain confidence working with more complex React features** used in real-world applications. It provided me with practical skills in state management and routing, which are essential for developing scalable front-end applications. The techniques learned here now inform how I architect production-ready React apps.
+
+### 📢 Note on Course Access
+Due to international sanctions in Iran, I was unable to access the official Code With Mosh platform directly. I obtained the course through a third-party distributor and completed it in full. While I do not have an official certificate, I carefully followed all course content and documented my learning here.
+
+For courses that included hands-on projects, the completed work is available in this repository. For others that were more theory-focused, I’ve included comprehensive notes, summaries, and all relevant materials as evidence of completion and understanding.
